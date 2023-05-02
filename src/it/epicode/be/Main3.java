@@ -1,5 +1,4 @@
 package it.epicode.be;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main3 {
