@@ -15,10 +15,10 @@ public class Main3 {
         String concatenation = string1.concat(string2).concat(string3);
         System.out.println("Concatenazione : " + concatenation);
         
-        String reverse = string3 + " " +  string2 + " " + string1;
-        
-        
-        System.out.println("al contrario :" + reverse);
+//        String reverse = string3 + " " +  string2 + " " + string1;
+//        
+//        
+//        System.out.println("al contrario :" + reverse);
         in.close();
         
 	}

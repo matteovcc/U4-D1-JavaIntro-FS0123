@@ -45,16 +45,23 @@ public class Main2 {
 	public static void Terzoesercizio() {
 		Scanner in = new Scanner(System.in);
 		
-		String[] array = {"lillo","chiara","laura","francesco","lorenzo"};
+		String[] array = {"lillo","chiara","laura","francesco","lorenzo", " "};
 		System.out.println("Scrivi il tuo nome:");
 		String newName = in.nextLine();
-		array[2] = newName;
-		String thirdposition = array[3];
-		String fourthposition = array[4];
 		
-		array[3]= fourthposition;
-		array[4] = thirdposition;
-		System.out.println(Arrays.toString(array));
+//		array[2] = newName;
+//		String thirdposition = array[3];
+//		String fourthposition = array[4];
+//		
+//		array[3]= fourthposition;
+//		array[4] = thirdposition;
+//		System.out.println(Arrays.toString(array));
+		for(int i = array.length-2; i >= 2; i--) {
+	        array[i+1] = array[i];
+	    }
+	    array[2] = newName;
+
+	    System.out.println(Arrays.toString(array));
 		
 		in.close();
 		

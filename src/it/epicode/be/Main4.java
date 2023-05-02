@@ -20,7 +20,7 @@ public class Main4 {
         }else {
         	System.out.println(1);
         }
-        
+        in.close();
 	}
 	
 	public static void perimetro() {
@@ -30,6 +30,7 @@ public class Main4 {
 		System.out.println("Altezza");
 		double altezza = in.nextDouble();
 		System.out.println("il perimetro è:" + (base+altezza) *  2);
+		in.close();
 	}
 	
 	public static void perimetroTriangolo() {
@@ -43,6 +44,7 @@ public class Main4 {
 	        double perimetro = lato1+lato2+lato3;
 	        double area = Math.sqrt(perimetro * (perimetro-lato1) * (perimetro-lato2) * (perimetro-lato3));
 	        System.out.println("l'area del triangolo è:" + area);
+	        in.close();
 	}
 
 
